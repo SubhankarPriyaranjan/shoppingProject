@@ -31,15 +31,17 @@ const UseHeader = () => {
                 <i className="fa fa-shopping-cart"></i> My Cart
               </Link>
             </li>
-            <li className="nav-item me-5">
-              <Link className="nav-link text-white" to="/login">
-                <i className="fa fa-lock"></i> Seller Login{" "}
-              </Link>
-            </li>
+
             <li className="nav-item me-5">
               <Link className="nav-link text-white" to="/register">
                 {" "}
-                <i className="fa fa-user-plus"></i> Seller Create Account{" "}
+                <i className="fa fa-user-plus"></i> Create Seller Account{" "}
+              </Link>
+            </li>
+
+            <li className="nav-item me-5">
+              <Link className="nav-link text-white" to="/login">
+                <i className="fa fa-lock"></i> Seller Login{" "}
               </Link>
             </li>
           </ul>

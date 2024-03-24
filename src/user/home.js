@@ -44,6 +44,7 @@ const Myhome = () => {
   };
 
   let [keyword, updateKeyword] = useState("");
+
   // this is code for pagination  from 41 to 49
   const PER_PAGE = 8; //this is the element contain in one page
   const [currentPage, setCurrentPage] = useState(0);
@@ -60,6 +61,7 @@ const Myhome = () => {
         <div className="row mb-4">
           <div className="col-lg-4"></div>
           <div className="col-lg-4">
+            {/*-- Search Section  */}
             <input
               type="text"
               className="form-control"
@@ -92,7 +94,12 @@ const Myhome = () => {
                           height="140"
                           width="100%"
                         />
-                        <p className="mt-3"> {product.details} </p>
+                        <p className="mt-3">
+                          {product.details
+                            ? product.details
+                            : `${product.name}`}
+                        </p>
+
                         <p className="m-3">Rs. {product.price} </p>
                         <p className="text-center">
                           <button
